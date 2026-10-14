@@ -9,8 +9,8 @@
 <main>
 <h1>Hallway walk</h1>
 <svg viewBox="0 0 480 426" role="img" aria-labelledby="scene-title scene-desc">
-<title id="scene-title">A dark-haired character walking down a school hallway</title>
-<desc id="scene-desc">A procedural interpretation of the supplied GIF, with a swaying head, blinking eyes, bobbing shoulders and moving hallway perspective.</desc>
+<title id="scene-title">Your illustrated character walking down a hallway</title>
+<desc id="scene-desc">A procedural interpretation of the supplied GIF, with a swaying body, bobbing shoulders and moving hallway perspective.</desc>
 <defs>
 <linearGradient id="wall"><stop stop-color="#818171"/><stop offset="1" stop-color="#4b4b41"/></linearGradient>
 <linearGradient id="skin"><stop stop-color="#b2a18b"/><stop offset="1" stop-color="#796b5d"/></linearGradient>
@@ -31,28 +31,12 @@
 <g transform="translate(341 245) scale(.6)"><ellipse cy="-53" rx="20" ry="28" fill="#897c66"/><path d="M-30 3Q0-40 35 2L35 100H-30" fill="#c5bca0"/><path d="M-22-45Q-36-91 9-90Q35-84 24-38" fill="#262824"/></g>
 </g>
 <g id="walker">
-<path d="M28 426 42 315Q64 251 158 239L318 240Q393 254 418 315L445 426Z" fill="url(#coat)"/>
-<path d="m145 246 36 180h147l-18-177" fill="#191a20"/>
-<path d="m161 249 40 38-23 13 25 58-71-103M305 250l-29 35 27 14-20 66 56-108" fill="#2c2c32"/>
-<path d="M210 208h66v64q-36 30-67-2Z" fill="url(#skin)"/>
-<path d="m205 255 22 7 47-6 11 17-38 13-36-15Z" fill="#0b0c11"/>
-<g id="head">
-<path d="M169 118Q147 50 213 34Q283 17 326 66Q350 112 322 192L305 253 275 228 176 227 157 183Z" fill="#12131a"/>
-<path d="M187 111Q199 67 248 68Q301 70 308 118L306 181Q302 219 273 239Q248 251 221 232Q185 210 184 166Z" fill="url(#skin)"/>
-<ellipse cx="184" cy="157" rx="11" ry="22" fill="#8b7d69"/>
-<path d="m190 127 26-12 23 7M259 122l24-6 16 13" fill="none" stroke="#302e2d" stroke-width="8"/>
-<g id="eyes"><path d="M200 142q15-14 31 0-16 12-31 0M260 140q16-14 31 2-16 11-31-2" fill="#29282d"/><ellipse cx="218" cy="141" rx="4" ry="5" fill="#747263"/><ellipse cx="276" cy="141" rx="4" ry="5" fill="#747263"/></g>
-<path d="m248 140-8 30 14 4" fill="none" stroke="#776753" stroke-width="3"/>
-<path d="M229 199q17-13 34-1l-4 5-29 1Z" fill="#4c3439"/>
-<path d="M168 137 155 94 143 99 163 75 153 54 181 64 173 38 199 48 203 23 225 38 247 17 254 34 280 20 278 40 313 30 302 50 337 49 319 69 343 82 325 90 343 115 318 106 310 148 287 103 262 76 225 72 201 89 194 127 175 165Z" fill="#111219"/>
-<path d="m177 80 24-30m15 12 18-27m32 20 15-16m13 41 24-16" stroke="#292a30" stroke-width="3"/>
-</g>
-<path d="m96 324-12 102m283-104 13 104" stroke="#37363b" stroke-width="2"/>
+<image href="character.png" x="0" y="0" width="480" height="460" preserveAspectRatio="xMidYMid meet"/>
 </g>
 </g>
 </svg>
 <nav aria-label="Animation controls"><button id="pause" aria-pressed="false">Pause</button><button id="replay">Replay</button><label>Speed <select id="speed"><option value=".5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label></nav>
-<small>Code-drawn interpretation of the <a href="https://giphy.com/gifs/emo-pVuja7BJl0Eow" style="color:inherit">reference GIF</a>. No GIF frames, video, libraries, or network requests are used to render the animation.</small>
+<small>Walking motion inspired by the <a href="https://giphy.com/gifs/emo-pVuja7BJl0Eow" style="color:inherit">reference GIF</a>. Uses your supplied character illustration with a generated transparent cutout. No video or external libraries.</small>
 </main>
 <script src="animation.js"></script>
 </html>
